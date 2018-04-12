@@ -1,0 +1,16 @@
+                
+
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1;
+    margin-bottom: 100px;
+    
+}
+/*form{
+  margin-top: 100px;
+}*/

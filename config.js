@@ -1,0 +1,1 @@
+IDRViewer.config = {"pagecount":2,"title":"","author":"","fileName":"lc.pdf","bounds":[[935,1540],[935,1540]],"bookmarks":[],"thumbnailType":"jpg","pageType":"html","pageLabels":[]};

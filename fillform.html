@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+<style type="text/css">
+	.error{
+	color: red;
+	display: none;
+	font-weight: bold;	
+	}
+form{
+
+    border: 1px solid;
+    padding: 40px;
+    box-shadow: 5px 10px 5px #888888;
+}
+</style>
+</head>
+
+<body>
+
+<!--Main Navigation-->
+<header>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark black" >
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <div class="jumbotron" style="margin-top: 65px">
+   	<h1>Student Detail</h1>
+   	<p>Fill all the detail below</p>
+   </div>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main class="text-center py-5 mt-3">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+               
+
+            </div>
+        </div>
+    </div>
+
+</main>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<!-- <main class="text-center py-5"> -->
+
+    
+
+   <div class="container">
+
+   	<form  id="needs-validation" novalidate action="save.php" method="post">
+  <div class="row">
+    <div class="col-md-12 ">
+      <label for="validationCustom01">Student's Full Name/विद्यार्थ्यांचे संपूर्ण नाव </label>
+      <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Student's Full Name" required onkeypress="return isAlpha(event);">
+                                
+                <span class="error full_name">Enter First Name</span>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-12 ">
+      <label for="validationCustom01">Mother's Full Name/आईचे  संपूर्ण नाव </label>
+      <input type="text" class="form-control" id="mother_name" name="mother_name" placeholder="Mother's Full Name"  required onkeypress="return isAlpha(event);">
+                                
+                <span class="error mother_name">Enter mother Name</span>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">student ID/विद्यार्थी  आय  डी </label>
+      <input type="text" class="form-control" id="stud_id" name="stud_id" placeholder="विद्यार्थी  आय  डी" required>
+      <span class="error stud_id">Enter ID properly</span>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">student U.I.D. /विद्यार्थी यु. आय.  डी. </label>
+      <input type="text" class="form-control" id="stud_uid" name="stud_uid" placeholder="विद्यार्थी यु आय  डी" required>
+      <span class="error stud_uid">Enter UID </span>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Natinality / राष्ट्रीयत्व  </label>
+      <input type="text" class="form-control" id="national" name="national" placeholder="राष्ट्रीयत्व " required>
+      <span class="error national">Natinality</span>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Mother Tongue/मातृभाषा  </label>
+      <input type="text" class="form-control" id="tongue" name="tongue" placeholder="मातृभाषा" required>
+      <span class="error tongue">Mother Tongue</span>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Religion/धर्म  </label>
+      <input type="text" class="form-control" id="religion" name="religion" placeholder="धर्म" required>
+      <span class="error religion">Religion</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Caste/जात  </label>
+      <input type="text" class="form-control" id="caste" name="caste" placeholder="जात " required>
+      <span class="error caste">Caste</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Sub Caste/पोटजात </label>
+      <input type="text" class="form-control" id="subcaste" name="subcaste" placeholder="पोटजात " required>
+      <span class="error subcaste">Sub Caste</span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Place of Birth/जन्मस्थळ </label>
+      <input type="text" class="form-control" id="birth_place"  name="birth_place" placeholder="जन्मस्थळ " required>
+      <span class="error birth_place">Place of Birth/जन्मस्थळ</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03"> Date of Birth In letters/जन्मतारीख महिना व ख्रिस्ती शकाप्रमाणे (अक्षरात )</label>
+      <input type="text" class="form-control" id="dob" name="dob" placeholder="जन्मतारीख महिना व ख्रिस्ती शकाप्रमाणे (अक्षरात )" required>
+      <span class="error dob">Date of Birth In letters</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03"> Date of Birth In Alphabets/जन्मतारीख महिना व ख्रिस्ती शकाप्रमाणे (अंकात )</label>
+      <input type="text" class="form-control" id="dob2" name="dob2" placeholder="जन्मतारीख महिना व ख्रिस्ती शकाप्रमाणे (अंकात )" required>
+      <span class="error dob2">Date of Birth In Alphabets</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Last School Attended With Standard/यापूर्वीची शाळा व इयत्ता </label>
+      <input type="text" class="form-control" id="last_school" name="last_school" placeholder="यापूर्वीची शाळा व इयत्ता " required>
+       <span class="error dob2">Date of Birth In Alphabets</span>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Date of Admission/प्रवेश दिनांक  </label>
+      <input type="text" class="form-control" id="doa" name="doa" placeholder="प्रवेश दिनांक " required>
+       <span class="error dob2">Date of Birth In Alphabets</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Standard and class into which admitted/कोणत्या वर्गात व इयतेत नाव दाखल केले </label>
+      <input type="text" class="form-control" id="class_of_admit" name="class_of_admit" placeholder="कोणत्या वर्गात व इयतेत नाव दाखल केले" required>
+       <span class="error dob2">Date of Birth In Alphabets</span>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">progress/अभ्यासातील प्रगती   </label>
+      <input type="text" class="form-control" id="progress" name="progress" placeholder="अभ्यासातील प्रगती  " required>
+       <span class="error dob2">Date of Birth In Alphabets</span>
+      
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Conduct/वर्तवणूक  </label>
+      <input type="text" class="form-control" id="conduct" name="conduct" placeholder="वर्तवणूक " required>
+       <span class="error dob2">Date of Birth In Alphabets</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Standard & class from which left & Date of leaving School/कोणत्या वर्गात व कोणत्या इयत्तेत असताना  शाळा सोडली व तारीख   </label>
+      <input type="text" class="form-control" id="leave_class_date" name="leave_class_date" placeholder="कोणत्या वर्गात व कोणत्या इयत्तेत असताना  शाळा सोडली व तारीख " required>
+       <span class="error dob2">Date of Birth In Alphabets</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Reason for leaving school/शाळा सोडल्याचे कारण   </label>
+      <input type="text" class="form-control" id="reason" name="reason" placeholder="शाळा सोडल्याचे कारण" required>
+       <span class="error dob2">Date of Birth In Alphabets</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Remarks/शेरा  </label>
+      <input type="text" class="form-control" id="remarks" name="remarks" placeholder="शेरा " required>
+       <span class="error dob2">Date of Birth In Alphabets</span>
+    </div>
+</div>
+    <br>
+    <br>
+  <button class="btn btn-primary" name="submit" type="submit">Submit Information</button>
+
+  <button class="btn btn-warning" type="Reset">Reset Information</button>
+</form>
+<br>
+<br>
+
+</div>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+
+  window.addEventListener('load', function() {
+    var form = document.getElementById('needs-validation');
+    form.addEventListener('submit', function(event) 
+    {
+
+var full_name = document.getElementById('full_name').value;
+var mother_name = document.getElementById('mother_name').value;
+var stud_id = document.getElementById('stud_id').value;
+         var stud_uid = document.getElementById('stud_uid').value;
+          var national = document.getElementById('tongue').value;
+         
+         var tongue = document.getElementById('tongue').value;
+         var religion = document.getElementById('religion').value;
+         var caste = document.getElementById('caste').value;
+          var subcaste = document.getElementById('subcaste').value;
+       
+       var dob = document.getElementById('dob').value;
+         var dob2 = document.getElementById('dob2').value;
+         var birth_place = document.getElementById('birth_place').value;
+         var last_school = document.getElementById('last_school').value;
+          var doa = document.getElementById('doa').value;
+       
+          var class_of_admit = document.getElementById('class_of_admit').value;
+        
+         var progress = document.getElementById('progress').value;
+         var conduct = document.getElementById('conduct').value;
+          var leave_class_date = document.getElementById('leave_class_date').value;
+            var reason = document.getElementById('reason').value;
+          var remarks = document.getElementById('remarks').value;
+
+  $('.full_name').hide();
+  $('.mother_name').hide();
+  $('.stud_id').hide();
+  $('.tongue').hide();
+  $('.stud_uid').hide();
+  $('.national').hide();
+  $('.religion').hide();
+  $('.caste').hide();
+$('.subcaste').hide();
+$('.dob').hide();
+$('.dob2').hide();
+  $('.doa').hide();
+  $('.birth_place').hide();
+ $('.last_school').hide();
+
+ $('.class_of_admit').hide();
+$('.progress').hide();
+  $('.conduct').hide();
+  $('.leave_class_date').hide();
+ $('.reason').hide();
+ $('.remarks').hide();
+
+
+  
+
+  if (full_name.length < 3) {
+            $('.full_name').show();
+            $('#full_name').focus();
+         }
+         else if (mother_name.length < 3) {
+             $('.mother_name').show();
+            $('#mother_name').focus();
+         }
+    else if (stud_id.length < 3) {
+            $('.stud_id').show();
+            $('#stud_id').focus();
+         }
+         else if (stud_uid.length < 2) {              
+            $('.stud_uid').show();
+            $('#stud_uid').focus();
+         }
+         else if (national.length < 3) {
+            $('.national').show();
+            $('#national').focus();
+         }
+         else if (tongue.length < 3) {
+            $('.tongue').show();
+            $('#tongue').focus();
+         }
+         else if (religion.length <3) {
+            $('.religion').show();
+            $('#religion').focus();
+         }
+         else if (caste.length <3) {
+            $('.caste').show();
+            $('#caste').focus();
+        }
+        else if (subcaste.length <3) {
+            $('.subcaste').show();
+            $('#subcaste').focus();
+        }
+
+        else if (birth_place.length <3) {
+            $('.birth_place').show();
+            $('#birth_place').focus();
+        }
+
+        else if (dob.length <3) {
+            $('.dob').show();
+            $('#dob').focus();
+        }
+      else if (dob2.length <3) {
+            $('.dob2').show();
+            $('#dob2').focus();
+        }
+        else if (last_school.length <3) {
+            $('.last_school').show();
+            $('#last_school').focus();
+        }
+        else if (doa.length <3) {
+            $('.doa').show();
+            $('#doa').focus();
+        }
+        else if (class_of_admit.length <3) {
+            $('.class_of_admit').show();
+            $('#class_of_admit').focus();
+        }
+
+        else if (progress.length <3) {
+            $('.progress').show();
+            $('#progress').focus();
+        }
+      else if (conduct.length <3) {
+            $('.conduct').show();
+            $('#conduct').focus();
+        }
+        else if (leave_class_date.length <3) {
+            $('.leave_class_date').show();
+            $('#leave_class_date').focus();
+        }
+        else if (reason.length <3) {
+            $('.reason').show();
+            $('#reason').focus();
+        }
+        else if (remarks.length <3) {
+            $('.remarks').show();
+            $('#remarks').focus();
+        }
+
+      if (form.checkValidity() === false) {
+
+        event.preventDefault();
+        event.stopPropagation();
+      
+      }
+
+
+      form.classList.add('was-validated');
+    }, false);
+  }, false);
+})();
+
+
+
+</script>
+
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

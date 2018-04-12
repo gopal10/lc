@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--Main Navigation-->
+<header>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark black" >
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <div class="jumbotron" style="margin-top: 65px">
+   	<h1>Student Detail</h1>
+   	<p>Fill all the detail below</p>
+   </div>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main class="text-center py-5 mt-3">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+               
+
+            </div>
+        </div>
+    </div>
+
+</main>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<!-- <main class="text-center py-5"> -->
+
+    
+
+   <div class="container">
+
+   	<form class="stud_form" id="needs-validation" novalidate>
+  <div class="row">
+    <div class="col-md-12 ">
+      <label for="validationCustom01">Student's Full Name/विद्यार्थ्यांचे संपूर्ण नाव </label>
+      <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Student's Full Name" required onkeypress="return isAlpha(event);">
+                                
+                <span class="error full_name">Enter First Name</span>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-12 ">
+      <label for="validationCustom01">Mother's Full Name/आईचे  संपूर्ण नाव </label>
+      <input type="text" class="form-control" id="mother_name" name="mother_name" placeholder="Mother's Full Name"  required>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">student ID/विद्यार्थी  आय  डी </label>
+      <input type="text" class="form-control" id="stud_id" name="stud_id" placeholder="विद्यार्थी  आय  डी" required>
+      
+    </div>
+</div>
+
+<!-- <div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">student ID/विद्यार्थी  आय.  डी. </label>
+      <input type="text" class="form-control" id="stud_uid" name="stud_uid" placeholder="विद्यार्थी  आय  डी" required>
+      
+    </div>
+</div> -->
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">student U.I.D. /विद्यार्थी यु. आय.  डी. </label>
+      <input type="text" class="form-control" id="stud_uid" name="stud_uid" placeholder="विद्यार्थी यु आय  डी" required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Natinality / राष्ट्रीयत्व  </label>
+      <input type="text" class="form-control" id="national" name="national" placeholder="राष्ट्रीयत्व " required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Mother Tongue/मातृभाषा  </label>
+      <input type="text" class="form-control" id="tongue" name="tongue" placeholder="मातृभाषा" required>
+      
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Religion/धर्म  </label>
+      <input type="text" class="form-control" id="religion" name="religion" placeholder="धर्म" required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Caste/जात  </label>
+      <input type="text" class="form-control" id="caste" name="caste" placeholder="जात " required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Sub Caste/पोटजात </label>
+      <input type="text" class="form-control" id="subcaste" name="subcaste" placeholder="पोटजात " required>
+      
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Place of Birth/जन्मस्थळ </label>
+      <input type="text" class="form-control" id="pob" class="pob" placeholder="जन्मस्थळ " required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03"> Date of Birth In letters/जन्मतारीख महिना व ख्रिस्ती शकाप्रमाणे (अक्षरात )</label>
+      <input type="text" class="form-control" id="dob" name="dob" placeholder="जन्मतारीख महिना व ख्रिस्ती शकाप्रमाणे (अक्षरात )" required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03"> Date of Birth In Alphabets/जन्मतारीख महिना व ख्रिस्ती शकाप्रमाणे (अंकात )</label>
+      <input type="text" class="form-control" id="dob2" name="dob2" placeholder="जन्मतारीख महिना व ख्रिस्ती शकाप्रमाणे (अंकात )" required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Last School Attended With Standard/यापूर्वीची शाळा व इयत्ता </label>
+      <input type="text" class="form-control" id="last_school" name="last_school" placeholder="यापूर्वीची शाळा व इयत्ता " required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Date of Admission/प्रवेश दिनांक  </label>
+      <input type="text" class="form-control" id="doa" name="doa" placeholder="प्रवेश दिनांक " required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Standard and class into which admitted/कोणत्या वर्गात व इयतेत नाव दाखल केले </label>
+      <input type="text" class="form-control" id="admitted" name="admitted" placeholder="कोणत्या वर्गात व इयतेत नाव दाखल केले" required>
+      
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">progress/अभ्यासातील प्रगती   </label>
+      <input type="text" class="form-control" id="progress" name="progress" placeholder="अभ्यासातील प्रगती  " required>
+      
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Conduct/वर्तवणूक  </label>
+      <input type="text" class="form-control" id="conduct" name="conduct" placeholder="वर्तवणूक " required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Standard & class from which left & Date of leaving School/कोणत्या वर्गात व कोणत्या इयत्तेत असताना  शाळा सोडली व तारीख   </label>
+      <input type="text" class="form-control" id="left_date" name="left_date" placeholder="कोणत्या वर्गात व कोणत्या इयत्तेत असताना  शाळा सोडली व तारीख " required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Reason for leaving school/शाळा सोडल्याचे कारण   </label>
+      <input type="text" class="form-control" id="reason" name="reason" placeholder="शाळा सोडल्याचे कारण" required>
+      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom03">Remarks/शेरा  </label>
+      <input type="text" class="form-control" id="remarks" name="remarks" placeholder="शेरा " required>
+      
+    </div>
+</div>
+    <br>
+    <br>
+  <button class="btn btn-primary stud_form" type="submit">Submit Information</button>
+
+  <button class="btn btn-warning" type="Reset">Reset Information</button>
+</form>
+<br>
+<br>
+
+</div>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+
+  window.addEventListener('load', function() {
+    var form = document.getElementById('needs-validation');
+    form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  }, false);
+})();
+</script>
+
+<script type="text/javascript">
+   $(document).ready(function () {
+    //Initialize tooltips
+    $('.nav-tabs > li a[title]').tooltip();
+    
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+        var $target = $(e.target);
+    
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".stud_form").click(function (e) {
+
+         var full_name = document.getElementById('full_name').value;
+         var mother_name = document.getElementById('mother_name').value;
+         var mobile = document.getElementById('mobile').value;
+         var emailid = document.getElementById('emailid').value;
+         var cur_loc = document.getElementById('cur_loc').value;
+         var pref_loc = document.getElementById('pref_loc').value;
+         var pincode = document.getElementById('pincode').value;
+         var industry = document.getElementById('industry').value;
+         // var role = document.getElementById('role').value;
+         var gender = document.getElementById('gender').value;
+         
+         var atpos = emailid.indexOf("@");
+         var dotpos = emailid.lastIndexOf(".");
+
+         $('.full_name').hide();
+         $('.mother_name').hide();
+         $('.mobile').hide();
+         $('.emailid').hide();
+         $('.cur_loc').hide();
+         $('.pref_loc').hide();
+         $('.pincode').hide();
+         $('.industry').hide();
+         // $('.role').hide();
+         $('.gender').hide();
+
+         if (full_name.length < 3) {
+            $('.full_name').show();
+            $('#full_name').focus();
+         }
+         else if (mother_name.length < 3) {
+            $('.mother_name').show();
+            $('#mother_name').focus();
+         }
+         else if (mobile.length != 10) {
+            $('.mobile').show();
+            $('#mobile').focus();
+         }
+         else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailid.length) {              
+            $('.emailid').show();
+            $('#emailid').focus();
+         }
+         else if (cur_loc.length < 3) {
+            $('.cur_loc').show();
+            $('#cur_loc').focus();
+         }
+         else if (pref_loc.length < 3) {
+            $('.pref_loc').show();
+            $('#pref_loc').focus();
+         }
+         else if (pincode.length != 6) {
+            $('.pincode').show();
+            $('#pincode').focus();
+         }
+         else if (industry.length == '') {
+            $('.industry').show();
+            $('#industry').focus();
+         }
+         // else if (role.length == '') {
+         //    $('.role').show();
+         //    $('#role').focus();
+         // }
+         else if (gender.length == '') {
+            $('.gender').show();
+            $('#gender').focus();
+         }
+         else{
+           var $active = $('.wizard .nav-tabs li.active');
+           $active.next().removeClass('disabled');
+           nextTab($active);
+         }
+    });
+
+  
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
